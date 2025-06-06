@@ -1,11 +1,20 @@
 import React from "react"
+import { Outlet } from "react-router"
+import Navigation from "./pages/auth/Navigation"
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import { Route, Routes } from "react-router";
 function App() {
 
   return (
     <>
-      <div>
-        <h1 className="text-6xl font-bold text-center m-52">Hello</h1>
-      </div>
+      <Navigation />
+      <Routes>
+        {/* Your routes here */}
+        <Route element={<Outlet />}>
+        </Route>
+      </Routes>
+      <ToastContainer />
     </>
   )
 }
