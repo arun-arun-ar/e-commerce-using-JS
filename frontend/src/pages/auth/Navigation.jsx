@@ -31,7 +31,7 @@ const Navigation = () => {
             {/* Top Section - Navigation Links */}
             <div className="flex flex-col justify-center space-y-4">
                 <Link
-                    to="/"
+                    to=""
                     className="flex items-center transition-transform transform hover:translate-x-2"
                 >
                     <AiOutlineHome className="mr-2 mt-[3rem]" size={26} />
